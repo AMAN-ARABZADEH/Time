@@ -1,20 +1,18 @@
-function updateTime() {
+// Author: Aman Arabzadeh
+
+const clock = document.querySelector(".digits"); // get the class
+// source I read about: https://developer.mozilla.org
+// Update the time every second
+setInterval(() => {
   // Get the current time
   const now = new Date();
   /// Source I read
-  // https://www.oreilly.com/library/view/javascript-cookbook-3rd/9781492055747/ch04.html
-  // Format the time as hours, minutes, and seconds
+
+  // Format the time as hours, minutes, and seconds, substring the useless part
+  // take two digits of time.
   const hours = now.getHours().toString().padStart(2, "0");
   const minutes = now.getMinutes().toString().padStart(2, "0");
   const seconds = now.getSeconds().toString().padStart(2, "0");
-
-  // Update the clock display with the new time
-  const clock = document.querySelector(".digits");
+  // append the clock on the screen
   clock.textContent = `${hours}:${minutes}:${seconds}`;
-}
-
-// Update the time every second
-setInterval(updateTime, 1000);
-
-// Call the function once to set the initial time
-updateTime();
+}, 5000); // delay 1 second
