@@ -15,4 +15,4 @@ setInterval(() => {
   const seconds = now.getSeconds().toString().padStart(2, "0");
   // append the clock on the screen
   clock.textContent = `${hours}:${minutes}:${seconds}`;
-}, 5000); // delay 1 second
+}, 1000); // delay 1 second
