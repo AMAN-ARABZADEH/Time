@@ -1,4 +1,4 @@
-/* Author: Aman Arabzadeh */
+/* This Was created by  Aman Arabzadeh */
 
 * {
   padding: 0;
@@ -14,8 +14,9 @@ body {
   overflow-x: 0;
 }
 
-.clock-container {
+.container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -76,5 +77,62 @@ body {
   .clock {
     height: 20vh;
     width: 80vw;
+  }
+}
+
+.temp {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 2rem;
+}
+#lat {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 5rem;
+  margin-right: 18%;
+}
+
+#lon {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 2rem;
+  margin-right: 17%;
+}
+
+@media screen and (max-width: 989px) {
+  .temp {
+    font-size: 1.5rem;
+  }
+  #lat {
+    font-size: 1.5rem;
+  }
+
+  #lon {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .temp {
+    font-size: 1rem;
+  }
+  #lat {
+    font-size: 1rem;
+  }
+
+  #lon {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .temp {
+    font-size: 0.9rem;
+  }
+  #lat {
+    font-size: 0.9rem;
+  }
+
+  #lon {
+    font-size: 0.9rem;
   }
 }
